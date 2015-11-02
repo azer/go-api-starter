@@ -1,0 +1,22 @@
+{
+  "name": "go-api-starter",
+  "version": "0.0.0",
+  "description": "Kik starter module for Go APIs",
+  "main": "index.js",
+  "keywords": [
+    "go",
+    "api",
+    "starter",
+    "kik"
+  ],
+  "repository": {
+    "url": "git@github.com:starters/go-api-starter.git",
+    "type": "git"
+  },
+  "author": "azer",
+  "license": "BSD",
+  "dependencies": {
+    "kik-starter": "^1.1.0",
+    "new-struct": "^0.1.1"
+  }
+}
