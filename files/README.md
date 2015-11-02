@@ -13,6 +13,7 @@ $ make watch
 ## Development
 
 * Package source lives under `./src/{kik:slug}`
+* `./.env` keeps environment variables & gets automatically loaded.
 * Dependencies are saved to `./vendor/`
 
 Commands:

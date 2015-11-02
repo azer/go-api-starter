@@ -4,6 +4,7 @@ import (
 	"github.com/joho/godotenv"
 	"github.com/labstack/echo"
 	"net/http"
+	"os"
 	"{kik:slug}"
 )
 
@@ -20,7 +21,7 @@ func main() {
 		panic(err)
 	}
 
-	e := echo.New(){kik:go-api:staticEndpoint}
-	e.Get("{kik:go-api:rootEndpoint}", Hi)
-	e.Run(":8080")
+	api := echo.New(){kik:go-api:staticEndpoint}
+	api.Get("{kik:go-api:rootEndpoint}", Hi)
+	api.Run(os.Getenv("ADDR"))
 }
