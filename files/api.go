@@ -12,7 +12,7 @@ func Hi(c *echo.Context) error {
 	return c.JSON(http.StatusOK, &struct {
 		Welcome string `json:"welcome"`
 	}{
-		{kik:variableName}.Welcome,
+		{kik:go-api:packageName}.Welcome,
 	})
 }
 

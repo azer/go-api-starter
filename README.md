@@ -9,6 +9,7 @@ Kik starter module for Go APIs. It comes with;
 ## Install
 
 Create your project with [kik](http://github.com/starters/kik) and choose `go-api-starter` as one of your starters.
+It'll prompt one extra question about if you want to serve a static folder, you can leave it blank or specify some static folders to serve. Here are some example answers for static serving: `public` or `/ => public` (The later sets / to serve from `public`)
 
 ## Usage
 

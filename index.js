@@ -6,7 +6,8 @@ var filesToRender = require('./to-render.json');
 
 var folder = path.join(__dirname, 'files');
 var form = [
-  { key: 'static', title: 'Any static file/folder to serve?', desc: 'e.g public, /:ui/public' }
+  { key: 'packageName', title: 'Go package name?', default: '{kik:variableName}' },
+  { key: 'static', title: 'Any static file/folder to serve?', desc: 'e.g public, / => ./public' }
 ];
 
 var GoAPIStarter = struct(Starter, {
@@ -48,9 +49,9 @@ function generateStaticEndpoint (starter) {
 
   if (!answer || !answer.length) return;
 
-  var parts = answer.split(':').map(function (el) { return el.trim(); });
-  var uri = parts[0];
-  var folder = parts[1] || parts[0];
+  var parts = answer.split('=>').map(function (el) { return el.trim(); });
+  var uri = parts[0].trim();
+  var folder = (parts[1] || parts[0]).trim();
 
   starter.context.staticEndpoint = '\n	api.Static("' + uri + '", "' + folder + '")';
 
