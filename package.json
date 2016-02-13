@@ -1,6 +1,6 @@
 {
   "name": "go-api-starter",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Kik starter module for Go APIs",
   "main": "index.js",
   "keywords": [
