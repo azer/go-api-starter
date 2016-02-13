@@ -7,7 +7,7 @@ PID=/tmp/go-$(GONAME).pid
 all: default
 
 default:
-	@echo "\n  🐣  {kik:name} API server"
+	@echo "\n  🐣  {kik:title} API server"
 	@$(MAKE) watch
 
 build:
