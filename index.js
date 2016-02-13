@@ -12,6 +12,7 @@ var form = [
 var render = [
   "README.md",
   "api.go",
+  "Makefile",
   "src/_package_/_main_.go"
 ];
 
