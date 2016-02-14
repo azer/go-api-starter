@@ -30,7 +30,7 @@ watch: restart
 restart: stop clean build start
 
 start:
-	@echo "  Starting bin/$(GONAME)"
+	@echo "  🏁  Starting bin/$(GONAME)"
 	@./bin/$(GONAME) & echo $$! > $(PID)
 
 stop:

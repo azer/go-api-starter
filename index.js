@@ -36,8 +36,8 @@ class GoAPIStarter extends Starter {
 
   start(callback) {
     var rename = {
-      'src/_package_/_main_.go': 'src/_package_/{kik:slug}.go',
-      'src/_package_': 'src/{kik:slug}'
+      'src/_package_/_main_.go': 'src/_package_/{kik:go-api:packageName}.go',
+      'src/_package_': 'src/{kik:go-api:packageName}'
     };
 
     this.setStaticEndpoints();

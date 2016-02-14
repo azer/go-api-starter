@@ -5,7 +5,7 @@ import (
 	"github.com/labstack/echo"
 	"net/http"
 	"os"
-	"{kik:slug}"
+	"{kik:go-api:packageName}"
 )
 
 func Hi(c *echo.Context) error {

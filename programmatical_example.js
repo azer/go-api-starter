@@ -2,7 +2,7 @@ var Project = require("kik");
 var GoAPIStarter = require("./");
 
 var yolo = new Project({
-  name: 'yolo',
+  name: 'yolo-api',
   folder: '/tmp/yolo',
   starters: [GoAPIStarter],
   remote: 'azer/yolo',
