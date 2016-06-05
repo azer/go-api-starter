@@ -1,18 +1,18 @@
-## {kik:name}
+## {hek:name}
 
-Created with [go-api-starter](http://github.com/starters/go-api-starter)
+Created with [go-api-starter](http://github.com/hek/go-api-starter)
 
 ## Install
 
 ```bash
-$ git clone {kik:remote}
+$ git clone {hek:remote}
 $ make get
 $ make watch
 ```
 
 ## Development
 
-* Package source lives under `./src/{kik:slug}`
+* Package source lives under `./src/{hek:slug}`
 * `./.env` keeps environment variables & gets automatically loaded.
 * Dependencies are saved to `./vendor/`
 
@@ -33,5 +33,5 @@ Links:
 * [package echo](https://godoc.org/github.com/labstack/echo)
 * [encoding/json](https://golang.org/pkg/encoding/json/)
 * [Go by Example: JSON](https://gobyexample.com/json)
-* [Kik](http://github.com/starters/kik)
+* [Hek](http://github.com/hek/hek)
 * [go-api-starter](http://github.com/starters/go-api-starter)

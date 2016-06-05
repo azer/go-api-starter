@@ -1,24 +1,18 @@
 {
   "name": "go-api-starter",
-  "version": "1.3.0",
-  "description": "Kik starter module for Go APIs",
+  "version": "1.0.0",
+  "description": "Hek starter module for Go APIs",
   "main": "index.js",
-  "keywords": [
-    "go",
-    "api",
-    "starter",
-    "kik"
-  ],
   "repository": {
-    "url": "git@github.com:starters/go-api-starter.git",
+    "url": "git@github.com:hek/go-api-starter.git",
     "type": "git"
   },
   "author": "azer",
   "license": "BSD",
   "dependencies": {
-    "kik-starter": "^2.2.0"
+    "starter": "hek/starter"
   },
   "devDependencies": {
-    "kik": "^1.3.0"
+    "hek": "hek/hek"
   }
 }

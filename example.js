@@ -1,10 +1,9 @@
-var kik = require('kik');
+var Project = require('hek');
 var api = require("./");
 
-var myproject = kik({
+var myproject = new Project({
   name: 'yolo-api',
   folder: '/tmp/yolo-api',
-  //starters: [{ module: require('./'), subfolder: 'api' }],
   starters:[require('./')],
   remote: 'azer/yolo-api',
   context: {

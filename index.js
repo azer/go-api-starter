@@ -1,11 +1,11 @@
 "use strict"
 
 var path = require("path");
-var Starter = require("kik-starter");
+var Starter = require("starter");
 
 var folder = path.join(__dirname, 'files');
 var form = [
-  { key: 'packageName', title: 'Go package name?', default: '{kik:variableName}' },
+  { key: 'packageName', title: 'Go package name?', default: '{hek:variableName}' },
   { key: 'static', title: 'Any static file/folder to serve?', desc: 'e.g public, / => ./public' }
 ];
 
@@ -36,8 +36,8 @@ class GoAPIStarter extends Starter {
 
   start(callback) {
     var rename = {
-      'src/_package_/_main_.go': 'src/_package_/{kik:go-api:packageName}.go',
-      'src/_package_': 'src/{kik:go-api:packageName}'
+      'src/_package_/_main_.go': 'src/_package_/{hek:go-api:packageName}.go',
+      'src/_package_': 'src/{hek:go-api:packageName}'
     };
 
     this.setStaticEndpoints();

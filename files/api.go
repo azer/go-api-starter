@@ -5,14 +5,14 @@ import (
 	"github.com/labstack/echo"
 	"net/http"
 	"os"
-	"{kik:go-api:packageName}"
+	"{hek:go-api:packageName}"
 )
 
 func Hi(c *echo.Context) error {
 	return c.JSON(http.StatusOK, &struct {
 		Welcome string `json:"welcome"`
 	}{
-		{kik:go-api:packageName}.Welcome,
+		{hek:go-api:packageName}.Welcome,
 	})
 }
 
@@ -21,7 +21,7 @@ func main() {
 		panic(err)
 	}
 
-	api := echo.New(){kik:go-api:staticEndpoint}
-	api.Get("{kik:go-api:rootEndpoint}", Hi)
+	api := echo.New(){hek:go-api:staticEndpoint}
+	api.Get("{hek:go-api:rootEndpoint}", Hi)
 	api.Run(os.Getenv("ADDR"))
 }

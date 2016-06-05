@@ -1,14 +1,15 @@
 ## go-api-starter
 
-Kik starter module for Go APIs. It comes with;
+Hek starter module for creating Go APIs. It comes with;
 
 * [Echo](http://github.com/labstack/echo)
 * [Makefile for Go Projects](https://gist.github.com/azer/7c83d0b59de8328355ad)
 * [godotenv](github.com/joho/godotenv)
+* Builtin minimalistic and safe dependency-system with Make.
 
 ## Install
 
-Create your project with [kik](http://github.com/starters/kik) and choose `go-api-starter` as one of your starters.
+Create your project with [hek](http://github.com/hek/hek) and choose `go-api-starter` as one of your starters.
 It'll prompt one extra question about if you want to serve a static folder, you can leave it blank or specify some static folders to serve. Here are some example answers for static serving: `public` or `/ => public` (The later sets / to serve from `public`)
 
 ## Usage
