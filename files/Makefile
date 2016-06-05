@@ -7,7 +7,7 @@ PID=/tmp/go-$(GONAME).pid
 all: default
 
 default:
-	@echo "\n  🐣  {hek:title} API server"
+	@echo "\n  🐣  {hek:title} API server\n"
 	@$(MAKE) watch
 
 build:
@@ -15,6 +15,7 @@ build:
 	@GOPATH=$(GOPATH) GOBIN=$(GOBIN) go build -o bin/$(GONAME) $(GOFILES)
 
 get:
+	@echo "  🔄  Please wait while I'm getting dependencies of {hek:title} for you."
 	@GOPATH=$(GOPATH) GOBIN=$(GOBIN) go get .
 
 install:
